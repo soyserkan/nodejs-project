@@ -1,0 +1,70 @@
+{{!-- Yeni Blog Yazısı Modalı --}}
+<div class="modal fade" id="kt_modal_4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="newPostModal" method="POST" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label class="form-control-label">Başlık:</label>
+                        <input type="text" class="form-control" name="p00">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-control-label">Blog Yazınız:</label>
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="summernote" name="p03"></div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-6 row">
+                            <label class="col-5 col-form-label">Yorum İzni:</label>
+                            <div class="col-7">
+                                <span class="kt-switch kt-switch--icon">
+                                    <label>
+                                        <input type="checkbox" name="p02" checked="checked">
+                                        <span></span>
+                                    </label>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-6 row">
+                            <label class="col-form-label col-5">Fotoğraf:</label>
+                            <div class="col-7">
+                                <input type="file" name="p04" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-6 row">
+                            <label class="col-3 col-form-label">Durum:</label>
+                            <select class="form-control col-7" name="p01">
+                                <option value="1">Yayında</option>
+                                <option value="2">Özel</option>
+                                <option value="3">Taslak</option>
+                            </select>
+                        </div>
+                        <div class="col-6 row">
+                            <label class="col-3 col-form-label">Kategori:</label>
+                            <select class="form-control col-7" name="p06">
+                                <option value="1">Teknoloji</option>
+                                <option value="2">Spor</option>
+                                <option value="3">Ekonomi</option>
+                            </select>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+                <button type="button" class="btn btn-primary" id="addNewPost">Kaydet</button>
+            </div>
+        </div>
+    </div>
+</div>
+{{!-- Yeni Blog Yazısı Modalı Son --}}
